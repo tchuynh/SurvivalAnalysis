@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\newcommand*{\Z}{\mathbb{Z}}
+\newcommand*{\N}{\mathbb{N}}
+\newcommand*{\R}{\mathbb{R}}
+\newcommand*{\subsetR}{$\subseteq \R $}
+\newcommand*{\eps}{$\epsilon$}
+
+\title{Survival Analysis}
+\date{\today}
+\author{Tam Huynh}
+\begin{document}
+\setcounter{secnumdepth}{0} %% no numbering
+
+	\maketitle
+	\subsection{Introduction}
+	Survival Analysis is a collection of statistical procedures for data analysis for which the outcome variable of interest is time until an event occurs.
+	More than one event may be considered in the same analysis, when more than one event is considered, the statistical problem can be characterized as either a recurrent event or a competing risk problems.  
+	\subsubsection{Examples}
+		\begin{itemize}
+			\item Leukemia patients and how long they stay in remission
+			\item Disease free cohort measuring time until heart disease
+			\item Elderly population to see how long subjects remain alive.
+			\item Parolees to see whether they get rearrested.
+			\item Heart transplant patients and how long they survive after transplant
+		\end{itemize}
+		
+	
+	\paragraph{$\epsilon$- neighborhood}
+	Given a $\in \R$ and \eps $ >$ 0
+	\begin{align*}
+	V_{\epsilon}(a) = {x \in \R: |x-a| < \epsilon}
+	\end{align*}
+	In other words, $V_{\epsilon}$ is the open interval (a - $\epsilon$, a+ $\epsilon$), centered at a with radius $\epsilon$.
+	\paragraph{Open}
+	A set O \subsetR  $ $ is open if for all points a $\in$ O there exists an \eps-neighborhood $V_{\epsilon}$(a) $\subseteq$ O.
+	\paragraph{Theorem 3.2.3}
+	The union of an arbitrary collection of opens sets is open.\\
+	The intersection of a finite collection of open sets is open.
+	
+	\subsection{Closed Sets}
+	
+	\paragraph{Limit Point:}
+	A point x is a limit point of a set A if every $\epsilon$-neighborhood $V_{\epsilon}(x)$ of x 	intersects the set A at some point other than x.
+
+	
+	
+
+	
+	
+	
+	
+\end{document}
